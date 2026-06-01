@@ -1,26 +1,24 @@
 # # 🏗️ Terraform-AWS-Lambda
 
-[![OpsStation](https://img.shields.io/badge/Made%20by-OpsStation-blue?style=flat-square&logo=terraform)](https://www.opsstation.com)
+[![vikas](https://img.shields.io/badge/Made%20by-vikas-blue?style=flat-square&logo=terraform)]
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Terraform](https://img.shields.io/badge/Terraform-1.13%2B-purple.svg?logo=terraform)](#)
-[![CI](https://github.com/OpsStation/terraform-aws-ec2/actions/workflows/ci.yml/badge.svg)](https://github.com/OpsStation/terraform-aws-ec2/actions/workflows/ci.yml)
+[![CI](https://github.com/chahalvikas2022/terraform-aws-ec2/actions/workflows/ci.yml/badge.svg)](https://github.com/chahalvikas2022/terraform-aws-ec2/actions/workflows/ci.yml)
 
-> 🌩️ **A production-grade, reusable AWS Ec2 module by [OpsStation](https://www.opsstation.com)**
+> 🌩️ **A production-grade, reusable AWS Ec2 module by [vikas]**
 > Designed for reliability, performance, and security — following AWS networking best practices.
 ---
 
 
-## 🏢 About OpsStation
+## 🏢 vikas OpsStation
 
-**OpsStation** delivers **Cloud & DevOps excellence** for modern teams:
+**vikas** delivers **Cloud & DevOps excellence** for modern teams:
 - 🚀 **Infrastructure Automation** with Terraform, Ansible & Kubernetes
 - 💰 **Cost Optimization** via scaling & right-sizing
 - 🛡️ **Security & Compliance** baked into CI/CD pipelines
 - ⚙️ **Fully Managed Operations** across AWS, Azure, and GCP
 
-> 💡 Need enterprise-grade DevOps automation?
-> 👉 Visit [**www.opsstation.com**](https://www.opsstation.com) or email **hello@opsstation.com**
-
+>
 ---
 ## 🌟 Features
 
@@ -34,7 +32,7 @@
 - ✅ Supports VPC configuration with **subnets** and **security groups**
 - ✅ Enables tagging and naming through the **Labels module**
 - ✅ Follows AWS best practices for **serverless security**, **scalability**, and **reliability**
-- ✅ Fully compatible with other **OpsStation Terraform serverless modules**
+- ✅ Fully compatible with other **vikas Terraform serverless modules**
 
 ## Examples
 
@@ -42,7 +40,7 @@
 
 ```hcl
 module "lambda" {
-  source      = "git::https://github.com/opsstation/terraform-aws-lambda.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-lambda.git"
   name        = local.name
   environment = local.environment
   filename    = "../../lambda_packages/index.zip" # -- The content of index.py should be present in zip format
@@ -56,7 +54,7 @@ module "lambda" {
 ## Example: basic-s3-function
 ```hcl
 module "lambda" {
-  source      = "git::https://github.com/opsstation/terraform-aws-lambda.git?ref=v1.0.0"
+  source      = "git::https://github.com/chahalvikas2022/terraform-aws-lambda.git"
   name        = local.name
   environment = local.environment
   s3_bucket   = "bucket-test"
@@ -71,7 +69,7 @@ module "lambda" {
 ## Example: complete-function
 ```hcl
 module "lambda" {
-  source                            = "git::https://github.com/opsstation/terraform-aws-lambda.git?ref=v1.0.0"
+  source                            = "git::https://github.com/chahalvikas2022/terraform-aws-lambda.git"
   name                              = local.name
   environment                       = local.environment
   create_layers                     = true
@@ -138,5 +136,5 @@ module "lambda" {
 | **AWS** | TitleCase | Any              | `Name`, `Environment`, `CostCenter` |
 
 ---
-### 💙 Maintained by [OpsStation](https://www.opsstation.com)
-> OpsStation — Simplifying Cloud, Securing Scale.
+### 💙 Maintained by [vikas]
+> vikas — Simplifying Cloud, Securing Scale.
